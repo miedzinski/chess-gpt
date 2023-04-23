@@ -10,13 +10,13 @@ OpenAI's ChatGPT language model.
 For Google Chrome:
 
 1. Download [the latest release](https://github.com/miedzinski/chess-gpt/releases/download/v1.0.0/chess_gpt-1.0.zip).
-2. Navigate to <chrome://extensions>.
+2. Navigate to [chrome://extensions](chrome://extensions).
 3. Turn on "Developer mode".
 4. Drop the .zip file anywhere.
 
 ## Configuration
 
-1. Visit <chrome://extensions>.
+1. Visit [chrome://extensions](chrome://extensions).
 2. Click on the ChessGPT details.
 3. Scroll down and open "Extension options".
 
@@ -55,4 +55,4 @@ token limit. Try changing the model in the options to a newer model like GPT-4.
 
 ## License
 
-GNU AGPLv3. See <LICENSE>.
+GNU AGPLv3. See [LICENSE](LICENSE).
