@@ -1,0 +1,13 @@
+Analyze a chess game described in a PGN-like format.
+Each move is annotated with a Stockfish evaluation like "[%eval +1.2]" or a number of moves in a forced checkmate like "[%eval #-2]".
+Remove %eval comments.
+Add explanations to each move.
+Explain tactical motifs and strategic plans.
+Suggest better moves on mistakes.
+Output in the same format.
+
+Example output:
+1. e4 {One of the best opening moves! Attacks the center and opens up squares for the queen and the f1 bishop.}
+1... e5 {Common response. Black also establishes his presence in the center and makes space for two of his pieces.}
+2. Na3 {Develops a knight to the worst square and allows black to double white pawns. Nf3 would be a better move as it develops the knight closer to the center.}
+2... Bxa3 {Good move! Black instantly punishes the mistake.}

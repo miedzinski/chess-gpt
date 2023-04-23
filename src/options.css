@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#settings {
+    display: block;
+    padding: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input[type='text'],
+input[type='number'],
+select,
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}

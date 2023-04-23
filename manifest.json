@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Chess GPT",
+    "version": "1.0",
+    "description": "Performs analysis of chess games using ChatGPT.",
+    "icons": {
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://lichess.org/*", "*://lichess.org/*"],
+            "js": ["vendor/sse.js", "src/settings.js", "src/content.js"]
+        }
+    ],
+    "web_accessible_resources": ["src/prompt.txt", "src/page.js"],
+    "options_ui": {
+        "page": "src/options.html",
+        "open_in_tab": false
+    },
+    "permissions": ["https://api.openai.com/v1/chat/completions", "storage"]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="options.css" />
+        <script type="text/javascript" src="settings.js"></script>
+        <script type="text/javascript" src="options.js" defer></script>
+    </head>
+    <body>
+        <form id="settings">
+            <button type="submit" id="save">Save</button>
+            <button type="submit" id="reset" formnovalidate>Reset</button>
+
+            <label for="api-key">OpenAI API Key:</label>
+            <input type="text" id="api-key" name="apiKey" />
+
+            <label for="model">Model:</label>
+            <select id="model" name="model">
+                <option value="gpt-3.5-turbo" selected>gpt-3.5-turbo</option>
+                <option value="gpt-4">gpt-4</option>
+                <option value="gpt-4-32k">gpt-4-32k</option>
+            </select>
+
+            <label for="prompt">Prompt:</label>
+            <textarea id="prompt" name="prompt" rows="10"></textarea>
+
+            <label for="temperature">Temperature (0.1 - 1.0):</label>
+            <input type="number" id="temperature" name="temperature" min="0.1" max="1" step="0.1" required />
+
+            <label for="top-p">Top-p (0.1 - 1.0):</label>
+            <input type="number" id="top-p" name="topP" min="0.1" max="1" step="0.1" />
+
+            <label for="frequency-penalty">Frequency Penalty (0.0 - 2.0):</label>
+            <input type="number" id="frequency-penalty" name="frequencyPenalty" min="0.0" max="2.0" step="0.1" />
+
+            <label for="presence-penalty">Presence Penalty (0.0 - 2.0):</label>
+            <input type="number" id="presence-penalty" name="presencePenalty" min="0.0" max="2.0" step="0.1" />
+        </form>
+    </body>
+</html>
